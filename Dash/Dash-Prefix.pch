@@ -1,0 +1,39 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #define IS_DEV_MODE [[NSUserDefaults standardUserDefaults] boolForKey:@"dev_mode"]
+
+    #define CLAMP(x, low, high)  (((x) > (high)) ? (high) : (((x) < (low)) ? (low) : (x)))
+
+    #define read(data, bytes, index) { [data getBytes:&bytes range:NSMakeRange(index, sizeof(bytes))]; index += sizeof(bytes); }
+
+    #define IS_IPAD  (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    #define IS_WIDESCREEN ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+    #define IS_RETINA ([UIScreen mainScreen].scale == 2.0)
+
+    #define DR_DARK_GRAY [UIColor colorWithRed:0.515 green:0.515 blue:0.515 alpha:1.000]
+    //#define DR_DARK_GRAY [UIColor colorWithRed:0.638 green:0.638 blue:0.638 alpha:1.000]
+    #define DR_LITE_GRAY [UIColor colorWithRed:0.866 green:0.866 blue:0.866 alpha:1.000]
+
+    #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#endif
+
+#if TARGET_IPHONE_SIMULATOR
+#define IS_SIMULATOR YES
+#else
+#define IS_SIMULATOR NO
+#endif

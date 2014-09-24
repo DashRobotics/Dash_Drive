@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ModeName</key>
+		<string>Circle</string>
+		<key>ImageName</key>
+		<string>auto-circle</string>
+		<key>DRCommandType</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>ModeName</key>
+		<string>Figure 8</string>
+		<key>ImageName</key>
+		<string>auto-figure8</string>
+		<key>DRCommandType</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>ModeName</key>
+		<string>Dance</string>
+		<key>ImageName</key>
+		<string>auto-dance</string>
+		<key>DRCommandType</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>ModeName</key>
+		<string>Bump</string>
+		<key>ImageName</key>
+		<string>auto-bump</string>
+		<key>DRCommandType</key>
+		<string>4</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,84 @@
+body {
+	max-width: 512px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	font-family: "AvenirNext-Regular", sans-serif;
+	font-size: 16px;
+}
+
+section, footer {
+	padding: 2em 15px 0;
+}
+
+footer {
+	font-family: "AvenirNextCondensed-Regular", sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+p {
+	margin: 0;
+}
+
+p + p {
+	margin-top: 0.5em;
+}
+
+a {
+	-webkit-touch-callout: none;
+}
+
+strong {
+	font-family: "AvenirNext-DemiBold", sans-serif;
+}
+
+#buttons {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.button {  
+	-webkit-flex: 1;
+	flex: 1;
+	display: block;
+	box-sizing: border-box;
+	background-color: #DCDCDC;
+	font-family: "AvenirNextCondensed-Medium", sans-serif;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	-webkit-tap-highlight-color: transparent;
+	padding: 7px;
+}
+
+.button + .button {
+	margin-left: 15px;
+}
+
+.button:active {
+	opacity: 0.25;
+}
+
+video {
+	box-sizing: border-box; 
+/* 	width: 100% !important; */
+/* 	height: auto !important; */
+	width: 320px !important;  /* Hack around a weird sizing problem */
+	height: 180px !important; /* with fixed 16:9 dimensions for iPhone. */
+	margin: 0 0 -10px;
+	padding: 0;
+}
+
+@media only screen and (min-device-width : 512px) { 
+	section, footer {
+		padding: 3em 0 0;
+	}
+	p + p {
+		margin-top: 1em;
+	}
+	video {
+		margin-top: 3em;
+		width: 512px !important;
+		height: 288px !important;
+	}
+}
