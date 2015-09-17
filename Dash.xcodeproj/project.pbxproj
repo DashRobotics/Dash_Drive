@@ -16,7 +16,6 @@
 		6617638E19188FA80036D3B2 /* DRSignalsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6617638C19188FA80036D3B2 /* DRSignalsView.xib */; };
 		6617639119189F850036D3B2 /* UIView+NibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 6617639019189F850036D3B2 /* UIView+NibLoading.m */; };
 		662B3094191DA49500FAFB08 /* instructions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 662B3093191DA49500FAFB08 /* instructions.pdf */; };
-		6638F50E18FE3BC300F7396B /* DRSignalPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6638F50D18FE3BC300F7396B /* DRSignalPacket.m */; };
 		6638F52C190217AE00F7396B /* RMMultipleViewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6638F52B190217AE00F7396B /* RMMultipleViewsController.m */; };
 		6638F52F190228BE00F7396B /* DRConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6638F52E190228BE00F7396B /* DRConfigViewController.m */; };
 		6638F53219033AA500F7396B /* landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6638F53019033AA500F7396B /* landscape@2x.png */; };
@@ -31,14 +30,16 @@
 		6638F5471904406000F7396B /* iphone-tall-blur@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6638F5451904406000F7396B /* iphone-tall-blur@2x.png */; };
 		6638F54C190459E100F7396B /* iphone-tall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6638F54B190459E100F7396B /* iphone-tall@2x.png */; };
 		6638F54F1904920800F7396B /* DREyeColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6638F54E1904920800F7396B /* DREyeColorButton.m */; };
+		665F75441BAA3E56005803AE /* DRCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F753D1BAA3E56005803AE /* DRCentralManager.m */; };
+		665F75451BAA3E56005803AE /* DRRobotLeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F753F1BAA3E56005803AE /* DRRobotLeService.m */; };
+		665F75461BAA3E56005803AE /* DRRobotProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F75411BAA3E56005803AE /* DRRobotProperties.m */; };
+		665F75471BAA3E56005803AE /* DRSignalPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F75431BAA3E56005803AE /* DRSignalPacket.m */; };
 		666CDC7F1925AED8002C7F45 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 666CDC7E1925AED8002C7F45 /* Settings.bundle */; };
 		667EA4CF18C3060C00E1C249 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667EA4CE18C3060C00E1C249 /* CoreMotion.framework */; };
-		66878CD1190DB6B50094B5CA /* DRRobotProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 66878CD0190DB6B50094B5CA /* DRRobotProperties.m */; };
 		66878CD6190DBFF20094B5CA /* DRAutoModesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66878CD5190DBFF20094B5CA /* DRAutoModesViewController.m */; };
 		66878CD9190DC2C70094B5CA /* DRAutoModeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66878CD8190DC2C70094B5CA /* DRAutoModeCell.m */; };
 		66878CDF190DD4710094B5CA /* CAShapeLayer+Progress.m in Sources */ = {isa = PBXBuildFile; fileRef = 66878CDE190DD4710094B5CA /* CAShapeLayer+Progress.m */; };
 		66878CE1190DEF860094B5CA /* DashAutoModes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66878CE0190DEF860094B5CA /* DashAutoModes.plist */; };
-		66AA0F3C18CD6E460093D5E3 /* DRRobotLeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AA0F3A18CD6E460093D5E3 /* DRRobotLeService.m */; };
 		66AA0F3E18CD6E560093D5E3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AA0F3D18CD6E560093D5E3 /* CoreBluetooth.framework */; };
 		66B2282718F1CE70008C6445 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B2282618F1CE70008C6445 /* CoreText.framework */; };
 		66B2282918F1CE75008C6445 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B2282818F1CE75008C6445 /* QuartzCore.framework */; };
@@ -65,7 +66,6 @@
 		66F0559718E521DC00ED241D /* LGPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F0558F18E521DC00ED241D /* LGPeripheral.m */; };
 		66F0559818E521DC00ED241D /* LGService.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F0559118E521DC00ED241D /* LGService.m */; };
 		66F0559918E521DC00ED241D /* LGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F0559318E521DC00ED241D /* LGUtils.m */; };
-		66F0559C18E526FF00ED241D /* DRCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F0559B18E526FF00ED241D /* DRCentralManager.m */; };
 		66F055CD18E8A80C00ED241D /* DRRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F055CC18E8A80C00ED241D /* DRRootViewController.m */; };
 		66F055D618E8B71E00ED241D /* DRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F055D518E8B71E00ED241D /* DRTabBarController.m */; };
 		CAFABD8119B456580017896F /* DRGyroButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFABD8019B456580017896F /* DRGyroButton.m */; };
@@ -83,8 +83,6 @@
 		6617638F19189F850036D3B2 /* UIView+NibLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NibLoading.h"; sourceTree = "<group>"; };
 		6617639019189F850036D3B2 /* UIView+NibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibLoading.m"; sourceTree = "<group>"; };
 		662B3093191DA49500FAFB08 /* instructions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = instructions.pdf; sourceTree = "<group>"; };
-		6638F50C18FE3BC300F7396B /* DRSignalPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRSignalPacket.h; sourceTree = "<group>"; };
-		6638F50D18FE3BC300F7396B /* DRSignalPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRSignalPacket.m; sourceTree = "<group>"; };
 		6638F5191902048200F7396B /* NSArray+AnyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+AnyObject.h"; sourceTree = "<group>"; };
 		6638F52A190217AE00F7396B /* RMMultipleViewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMultipleViewsController.h; sourceTree = "<group>"; };
 		6638F52B190217AE00F7396B /* RMMultipleViewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMultipleViewsController.m; sourceTree = "<group>"; };
@@ -103,10 +101,16 @@
 		6638F54B190459E100F7396B /* iphone-tall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-tall@2x.png"; sourceTree = "<group>"; };
 		6638F54D1904920800F7396B /* DREyeColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DREyeColorButton.h; sourceTree = "<group>"; };
 		6638F54E1904920800F7396B /* DREyeColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DREyeColorButton.m; sourceTree = "<group>"; };
+		665F753C1BAA3E56005803AE /* DRCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRCentralManager.h; path = Dash/BLE/DRCentralManager.h; sourceTree = SOURCE_ROOT; };
+		665F753D1BAA3E56005803AE /* DRCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRCentralManager.m; path = Dash/BLE/DRCentralManager.m; sourceTree = SOURCE_ROOT; };
+		665F753E1BAA3E56005803AE /* DRRobotLeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRRobotLeService.h; path = Dash/BLE/DRRobotLeService.h; sourceTree = SOURCE_ROOT; };
+		665F753F1BAA3E56005803AE /* DRRobotLeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRRobotLeService.m; path = Dash/BLE/DRRobotLeService.m; sourceTree = SOURCE_ROOT; };
+		665F75401BAA3E56005803AE /* DRRobotProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRRobotProperties.h; path = Dash/BLE/DRRobotProperties.h; sourceTree = SOURCE_ROOT; };
+		665F75411BAA3E56005803AE /* DRRobotProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRRobotProperties.m; path = Dash/BLE/DRRobotProperties.m; sourceTree = SOURCE_ROOT; };
+		665F75421BAA3E56005803AE /* DRSignalPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRSignalPacket.h; path = Dash/BLE/DRSignalPacket.h; sourceTree = SOURCE_ROOT; };
+		665F75431BAA3E56005803AE /* DRSignalPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRSignalPacket.m; path = Dash/BLE/DRSignalPacket.m; sourceTree = SOURCE_ROOT; };
 		666CDC7E1925AED8002C7F45 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		667EA4CE18C3060C00E1C249 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		66878CCF190DB6B40094B5CA /* DRRobotProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRRobotProperties.h; sourceTree = "<group>"; };
-		66878CD0190DB6B50094B5CA /* DRRobotProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRRobotProperties.m; sourceTree = "<group>"; };
 		66878CD4190DBFF20094B5CA /* DRAutoModesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRAutoModesViewController.h; path = "Driving Controls/DRAutoModesViewController.h"; sourceTree = "<group>"; };
 		66878CD5190DBFF20094B5CA /* DRAutoModesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRAutoModesViewController.m; path = "Driving Controls/DRAutoModesViewController.m"; sourceTree = "<group>"; };
 		66878CD7190DC2C70094B5CA /* DRAutoModeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRAutoModeCell.h; path = Components/DRAutoModeCell.h; sourceTree = "<group>"; };
@@ -114,8 +118,6 @@
 		66878CDD190DD4710094B5CA /* CAShapeLayer+Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+Progress.h"; sourceTree = "<group>"; };
 		66878CDE190DD4710094B5CA /* CAShapeLayer+Progress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+Progress.m"; sourceTree = "<group>"; };
 		66878CE0190DEF860094B5CA /* DashAutoModes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DashAutoModes.plist; sourceTree = "<group>"; };
-		66AA0F3918CD6E460093D5E3 /* DRRobotLeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRRobotLeService.h; sourceTree = "<group>"; };
-		66AA0F3A18CD6E460093D5E3 /* DRRobotLeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRRobotLeService.m; sourceTree = "<group>"; };
 		66AA0F3D18CD6E560093D5E3 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		66B2282618F1CE70008C6445 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		66B2282818F1CE75008C6445 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -158,8 +160,6 @@
 		66F0559118E521DC00ED241D /* LGService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGService.m; sourceTree = "<group>"; };
 		66F0559218E521DC00ED241D /* LGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGUtils.h; sourceTree = "<group>"; };
 		66F0559318E521DC00ED241D /* LGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGUtils.m; sourceTree = "<group>"; };
-		66F0559A18E526FF00ED241D /* DRCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRCentralManager.h; sourceTree = "<group>"; };
-		66F0559B18E526FF00ED241D /* DRCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRCentralManager.m; sourceTree = "<group>"; };
 		66F055CB18E8A80C00ED241D /* DRRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRRootViewController.h; sourceTree = "<group>"; };
 		66F055CC18E8A80C00ED241D /* DRRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRRootViewController.m; sourceTree = "<group>"; };
 		66F055D418E8B71E00ED241D /* DRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRTabBarController.h; sourceTree = "<group>"; };
@@ -237,14 +237,14 @@
 		66AA0F3618CD6E460093D5E3 /* BLE */ = {
 			isa = PBXGroup;
 			children = (
-				66F0559A18E526FF00ED241D /* DRCentralManager.h */,
-				66F0559B18E526FF00ED241D /* DRCentralManager.m */,
-				66AA0F3918CD6E460093D5E3 /* DRRobotLeService.h */,
-				66AA0F3A18CD6E460093D5E3 /* DRRobotLeService.m */,
-				6638F50C18FE3BC300F7396B /* DRSignalPacket.h */,
-				6638F50D18FE3BC300F7396B /* DRSignalPacket.m */,
-				66878CCF190DB6B40094B5CA /* DRRobotProperties.h */,
-				66878CD0190DB6B50094B5CA /* DRRobotProperties.m */,
+				665F753C1BAA3E56005803AE /* DRCentralManager.h */,
+				665F753D1BAA3E56005803AE /* DRCentralManager.m */,
+				665F753E1BAA3E56005803AE /* DRRobotLeService.h */,
+				665F753F1BAA3E56005803AE /* DRRobotLeService.m */,
+				665F75401BAA3E56005803AE /* DRRobotProperties.h */,
+				665F75411BAA3E56005803AE /* DRRobotProperties.m */,
+				665F75421BAA3E56005803AE /* DRSignalPacket.h */,
+				665F75431BAA3E56005803AE /* DRSignalPacket.m */,
 			);
 			name = BLE;
 			path = ../../dash/Dash/BLE;
@@ -512,13 +512,12 @@
 			files = (
 				66F0559718E521DC00ED241D /* LGPeripheral.m in Sources */,
 				66B2284618FA6896008C6445 /* DRDeviceCell.m in Sources */,
-				6638F50E18FE3BC300F7396B /* DRSignalPacket.m in Sources */,
 				66F0559418E521DC00ED241D /* CBUUID+StringExtraction.m in Sources */,
+				665F75451BAA3E56005803AE /* DRRobotLeService.m in Sources */,
 				6638F52F190228BE00F7396B /* DRConfigViewController.m in Sources */,
-				66878CD1190DB6B50094B5CA /* DRRobotProperties.m in Sources */,
+				665F75441BAA3E56005803AE /* DRCentralManager.m in Sources */,
 				66D6FD3E18C2DD3B00783AC8 /* DRAppDelegate.m in Sources */,
 				66F0559618E521DC00ED241D /* LGCharacteristic.m in Sources */,
-				66F0559C18E526FF00ED241D /* DRCentralManager.m in Sources */,
 				66F0559818E521DC00ED241D /* LGService.m in Sources */,
 				66F055CD18E8A80C00ED241D /* DRRootViewController.m in Sources */,
 				66878CD6190DBFF20094B5CA /* DRAutoModesViewController.m in Sources */,
@@ -528,9 +527,9 @@
 				66878CD9190DC2C70094B5CA /* DRAutoModeCell.m in Sources */,
 				66F055D618E8B71E00ED241D /* DRTabBarController.m in Sources */,
 				66B2285418FA68C7008C6445 /* DRJoystickViewController.m in Sources */,
-				66AA0F3C18CD6E460093D5E3 /* DRRobotLeService.m in Sources */,
 				66B2284718FA6896008C6445 /* DRWebViewController.m in Sources */,
 				6617639119189F850036D3B2 /* UIView+NibLoading.m in Sources */,
+				665F75461BAA3E56005803AE /* DRRobotProperties.m in Sources */,
 				6638F54F1904920800F7396B /* DREyeColorButton.m in Sources */,
 				66F0559918E521DC00ED241D /* LGUtils.m in Sources */,
 				66B2285818FAFDF7008C6445 /* DRButton.m in Sources */,
@@ -538,6 +537,7 @@
 				66B2285318FA68C7008C6445 /* DRControlsViewController.m in Sources */,
 				66D6FD3A18C2DD3B00783AC8 /* main.m in Sources */,
 				66878CDF190DD4710094B5CA /* CAShapeLayer+Progress.m in Sources */,
+				665F75471BAA3E56005803AE /* DRSignalPacket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

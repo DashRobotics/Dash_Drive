@@ -13,7 +13,7 @@
 #import "DRTabBarController.h"
 #import "DRWebViewController.h"
 #import "CAShapeLayer+Progress.h"
-#import "Flurry.h"
+//#import "Flurry.h"
 
 NSNumber *currentTime;
 NSTimeInterval TimeInterval;

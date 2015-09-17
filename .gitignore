@@ -1,7 +1,7 @@
 
-Dash.xcodeproj/project.xcworkspace/xcuserdata/paulb.xcuserdatad/UserInterfaceState.xcuserstate
+*.xcuserdatad/
 
-Dash.xcodeproj/project.xcworkspace/xcshareddata/Dash.xccheckout
+Dash.xcodeproj/project.xcworkspace/xcshareddata/*
 
 Dash.xcodeproj/xcuserdata/paulb.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
 

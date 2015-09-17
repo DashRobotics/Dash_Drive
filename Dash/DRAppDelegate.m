@@ -42,7 +42,7 @@
     [[UISegmentedControl appearance] setTitleTextAttributes:segmentedControlTextAttributes forState:UIControlStateNormal];
     [[UISegmentedControl appearance] setTitleTextAttributes:segmentedControlTextAttributes forState:UIControlStateSelected];
     [[UISegmentedControl appearance] setTintColor:DR_LITE_GRAY];
-    [[UISegmentedControl appearance] setContentPositionAdjustment:UIOffsetMake(0, IS_RETINA ? 2 : 1) forSegmentType:UISegmentedControlSegmentAny barMetrics:UIBarMetricsDefault];
+    [[UISegmentedControl appearance] setContentPositionAdjustment:UIOffsetMake(0, IS_RETINA ? 1 : 0) forSegmentType:UISegmentedControlSegmentAny barMetrics:UIBarMetricsDefault];
     
     self.window.tintColor = [UIColor blackColor];
 }
