@@ -269,10 +269,11 @@ NSTimeInterval TimeInterval;
 {
     UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)collectionViewLayout;
     NSInteger index = self.bleManager.manager.scanning ? indexPath.row - 1 : indexPath.row;
+    CGFloat width = CGRectGetWidth(collectionView.bounds) - flowLayout.sectionInset.left - flowLayout.sectionInset.right;
     if (index < 0 || !self.bleManager.peripherals.count) {
-        return CGSizeMake(flowLayout.itemSize.width, 16); // explanation row
+        return CGSizeMake(width, 16); // explanation row
     } else {
-        return flowLayout.itemSize;
+        return CGSizeMake(width, flowLayout.itemSize.height);
     }
 }
 

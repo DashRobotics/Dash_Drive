@@ -170,7 +170,7 @@ NSString *const kTestAutoMode = @"0";
         return flowLayout.itemSize;
     } else {
         CGFloat height = flowLayout.itemSize.height + (IS_WIDESCREEN ? 11 : 0);
-        CGFloat width = flowLayout.itemSize.width;
+        CGFloat width = CGRectGetWidth(collectionView.bounds) / 2.0 - 1;//flowLayout.itemSize.width;
         if (indexPath.row % 2 == 0) {
             width += 1;
         } else {
