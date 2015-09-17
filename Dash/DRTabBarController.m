@@ -27,9 +27,14 @@
     self.viewController = @[
                             [self.storyboard instantiateViewControllerWithIdentifier:@"DRJoystickViewController"],
                             [(IS_IPAD ? iPadStoryboard : self.storyboard) instantiateViewControllerWithIdentifier:@"DRAutoModesViewController"],
-//                            [self.storyboard instantiateViewControllerWithIdentifier:@"DRMotionViewController"],
-                            [self.storyboard instantiateViewControllerWithIdentifier:@"DRConfigViewController"]
+                            [self.storyboard instantiateViewControllerWithIdentifier:@"DRConfigViewController"],
                             ];
+    
+    if (IS_DEV_MODE) {
+        self.viewController = [self.viewController arrayByAddingObject:
+                               [self.storyboard instantiateViewControllerWithIdentifier:@"DRDemoTableViewController"]];
+    }
+    
     if (IS_IPAD) {
         [self.viewController[0] setTitle:@"MANUAL DRIVE"];
         [self.viewController[1] setTitle:@"AUTOMATIC MODES"];

@@ -87,14 +87,14 @@ NSTimeInterval ElapsedTimeInterval;
 {
     if (self.bleService.useGyroDrive) {
         CGFloat steering_angle = copysignf(1,atan2(_direction,_throttle));
-        steering_angle = steering_angle*((M_PI/2 - fabsf(fabsf(atan2(_direction,_throttle))-M_PI/2))*2/M_PI);
+        steering_angle = steering_angle*((M_PI/2 - fabs(fabs(atan2(_direction,_throttle))-M_PI/2))*2/M_PI);
         CGFloat power = copysignf(sqrt(_direction * _direction + _throttle * _throttle),-atan2f(_throttle,_direction));
         if (power != 0) {
             power = copysignf(BASE_PWM,power) + (MAX_PWM - BASE_PWM) * copysignf(powf(power,3),power);
         }
         steering_angle = copysignf(powf(copysignf(steering_angle,1),1.5),steering_angle); // Nonlinear steering rate
-        if (fabsf(steering_angle) > 0.85) {
-            steering_angle = copysignf(0.85 + 3 * (fabsf(steering_angle)-0.85), steering_angle);
+        if (fabs(steering_angle) > 0.85) {
+            steering_angle = copysignf(0.85 + 3 * (fabs(steering_angle)-0.85), steering_angle);
         }
 //        NSLog(@"power %f", power);
 //        NSLog(@"steering_angle %f", steering_angle);

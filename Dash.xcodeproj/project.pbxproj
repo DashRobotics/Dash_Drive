@@ -34,6 +34,8 @@
 		665F75451BAA3E56005803AE /* DRRobotLeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F753F1BAA3E56005803AE /* DRRobotLeService.m */; };
 		665F75461BAA3E56005803AE /* DRRobotProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F75411BAA3E56005803AE /* DRRobotProperties.m */; };
 		665F75471BAA3E56005803AE /* DRSignalPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F75431BAA3E56005803AE /* DRSignalPacket.m */; };
+		665F754B1BAA47EC005803AE /* DRDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F754A1BAA47EC005803AE /* DRDemoTableViewController.m */; };
+		665F754E1BAA4806005803AE /* DRProcedureDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F754D1BAA4806005803AE /* DRProcedureDemoTableViewController.m */; };
 		666CDC7F1925AED8002C7F45 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 666CDC7E1925AED8002C7F45 /* Settings.bundle */; };
 		667EA4CF18C3060C00E1C249 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667EA4CE18C3060C00E1C249 /* CoreMotion.framework */; };
 		66878CD6190DBFF20094B5CA /* DRAutoModesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66878CD5190DBFF20094B5CA /* DRAutoModesViewController.m */; };
@@ -109,6 +111,10 @@
 		665F75411BAA3E56005803AE /* DRRobotProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRRobotProperties.m; path = Dash/BLE/DRRobotProperties.m; sourceTree = SOURCE_ROOT; };
 		665F75421BAA3E56005803AE /* DRSignalPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRSignalPacket.h; path = Dash/BLE/DRSignalPacket.h; sourceTree = SOURCE_ROOT; };
 		665F75431BAA3E56005803AE /* DRSignalPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRSignalPacket.m; path = Dash/BLE/DRSignalPacket.m; sourceTree = SOURCE_ROOT; };
+		665F75491BAA47EC005803AE /* DRDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRDemoTableViewController.h; path = Demo/DRDemoTableViewController.h; sourceTree = "<group>"; };
+		665F754A1BAA47EC005803AE /* DRDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRDemoTableViewController.m; path = Demo/DRDemoTableViewController.m; sourceTree = "<group>"; };
+		665F754C1BAA4806005803AE /* DRProcedureDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRProcedureDemoTableViewController.h; path = Demo/DRProcedureDemoTableViewController.h; sourceTree = "<group>"; };
+		665F754D1BAA4806005803AE /* DRProcedureDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRProcedureDemoTableViewController.m; path = Demo/DRProcedureDemoTableViewController.m; sourceTree = "<group>"; };
 		666CDC7E1925AED8002C7F45 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		667EA4CE18C3060C00E1C249 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		66878CD4190DBFF20094B5CA /* DRAutoModesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRAutoModesViewController.h; path = "Driving Controls/DRAutoModesViewController.h"; sourceTree = "<group>"; };
@@ -211,6 +217,17 @@
 				6617638C19188FA80036D3B2 /* DRSignalsView.xib */,
 			);
 			name = "Other Views";
+			sourceTree = "<group>";
+		};
+		665F75481BAA462B005803AE /* Demo Controls */ = {
+			isa = PBXGroup;
+			children = (
+				665F75491BAA47EC005803AE /* DRDemoTableViewController.h */,
+				665F754A1BAA47EC005803AE /* DRDemoTableViewController.m */,
+				665F754C1BAA4806005803AE /* DRProcedureDemoTableViewController.h */,
+				665F754D1BAA4806005803AE /* DRProcedureDemoTableViewController.m */,
+			);
+			name = "Demo Controls";
 			sourceTree = "<group>";
 		};
 		66878CD2190DBF7B0094B5CA /* Config Controls */ = {
@@ -329,6 +346,7 @@
 				66F055D518E8B71E00ED241D /* DRTabBarController.m */,
 				66B2284C18FA68C7008C6445 /* DRControlsViewController.h */,
 				66B2284D18FA68C7008C6445 /* DRControlsViewController.m */,
+				665F75481BAA462B005803AE /* Demo Controls */,
 				66878CD3190DBF9C0094B5CA /* Auto Controls */,
 				66878CD2190DBF7B0094B5CA /* Config Controls */,
 				66B2284918FA68C7008C6445 /* Driving Controls */,
@@ -512,6 +530,7 @@
 			files = (
 				66F0559718E521DC00ED241D /* LGPeripheral.m in Sources */,
 				66B2284618FA6896008C6445 /* DRDeviceCell.m in Sources */,
+				665F754E1BAA4806005803AE /* DRProcedureDemoTableViewController.m in Sources */,
 				66F0559418E521DC00ED241D /* CBUUID+StringExtraction.m in Sources */,
 				665F75451BAA3E56005803AE /* DRRobotLeService.m in Sources */,
 				6638F52F190228BE00F7396B /* DRConfigViewController.m in Sources */,
@@ -526,6 +545,7 @@
 				6638F52C190217AE00F7396B /* RMMultipleViewsController.m in Sources */,
 				66878CD9190DC2C70094B5CA /* DRAutoModeCell.m in Sources */,
 				66F055D618E8B71E00ED241D /* DRTabBarController.m in Sources */,
+				665F754B1BAA47EC005803AE /* DRDemoTableViewController.m in Sources */,
 				66B2285418FA68C7008C6445 /* DRJoystickViewController.m in Sources */,
 				66B2284718FA6896008C6445 /* DRWebViewController.m in Sources */,
 				6617639119189F850036D3B2 /* UIView+NibLoading.m in Sources */,
