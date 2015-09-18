@@ -34,7 +34,8 @@ typedef NS_ENUM(NSInteger, DRDemoTableRows) {
 }
 
 - (IBAction)didLightButtonRelease:(UIButton *)sender {
-    self.bleService.eyeColor = kDREyeColorOff;
+//    self.bleService.eyeColor = kDREyeColorOff;
+    [self.bleService performSelector:@selector(setEyeColor:) withObject:kDREyeColorOff afterDelay:0.075];
 }
 
 - (void)driveForwardAtSpeed:(NSNumber *)speed {
@@ -48,21 +49,18 @@ typedef NS_ENUM(NSInteger, DRDemoTableRows) {
         switch (indexPath.row) {
             case DRDemoTableRowLaserHit:
             {
-                [self.bleService performSelector:@selector(setEyeColor:) withObject:[UIColor redColor] afterDelay:0];
-                [self.bleService performSelector:@selector(setEyeColor:) withObject:kDREyeColorOff afterDelay:0.1];
-                
-                [self.bleService performSelector:@selector(setEyeColor:) withObject:[UIColor redColor] afterDelay:0.2];
-                [self.bleService performSelector:@selector(setEyeColor:) withObject:kDREyeColorOff afterDelay:0.3];
-                
-                [self.bleService performSelector:@selector(setEyeColor:) withObject:[UIColor redColor] afterDelay:0.4];
-                [self.bleService performSelector:@selector(setEyeColor:) withObject:kDREyeColorOff afterDelay:0.5];
+                for (NSUInteger i = 0; i < 8; i++) {
+                    UIColor *color = (i % 2)? kDREyeColorOff : [UIColor redColor];
+                    [self.bleService performSelector:@selector(setEyeColor:) withObject:color afterDelay:0.075*i];
+                }
                 break;
             }
             case DRDemoTableRowRedEyeRun:
             {
                 [self.bleService performSelector:@selector(setEyeColor:) withObject:[UIColor redColor] afterDelay:0];
                 [self performSelector:@selector(driveForwardAtSpeed:) withObject:@(100) afterDelay:0];
-                [self.bleService performSelector:@selector(reset) withObject:nil afterDelay:5];
+                [self.bleService performSelector:@selector(reset) withObject:nil afterDelay:3];
+                [self.bleService performSelector:@selector(setEyeColor:) withObject:kDREyeColorOff afterDelay:3];
                 break;
             }
             default:

@@ -367,21 +367,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableFooterView" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="hNL-t5-M5A">
-                            <rect key="frame" x="0.0" y="294" width="320" height="100"/>
+                            <rect key="frame" x="0.0" y="294" width="320" height="130"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COK-jF-LSW" customClass="DRButton">
-                                    <rect key="frame" x="8" y="22" width="56" height="56"/>
+                                    <rect key="frame" x="0.0" y="30" width="80" height="100"/>
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                            <real key="value" value="0.5"/>
+                                            <real key="value" value="0.0"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="28"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <real key="value" value="0.0"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                     <connections>
@@ -390,42 +387,15 @@
                                         <action selector="didLightButtonTouchDown:" destination="hbY-sM-U6X" eventType="touchDown" id="gFh-0L-7fF"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckd-sx-zS8" customClass="DRButton">
-                                    <rect key="frame" x="90" y="22" width="56" height="56"/>
-                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="56" id="HNd-2s-PgR"/>
-                                        <constraint firstAttribute="width" constant="56" id="q0K-Bb-L0S"/>
-                                    </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                            <real key="value" value="0.5"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="28"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                    <connections>
-                                        <action selector="didLightButtonRelease:" destination="hbY-sM-U6X" eventType="touchUpOutside" id="mw7-I6-J23"/>
-                                        <action selector="didLightButtonRelease:" destination="hbY-sM-U6X" eventType="touchUpInside" id="s3U-7M-Xff"/>
-                                        <action selector="didLightButtonTouchDown:" destination="hbY-sM-U6X" eventType="touchDown" id="7EI-gE-bgM"/>
-                                    </connections>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ym0-wr-etY" customClass="DRButton">
-                                    <rect key="frame" x="173" y="22" width="56" height="56"/>
+                                    <rect key="frame" x="160" y="30" width="80" height="100"/>
                                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                            <real key="value" value="0.5"/>
+                                            <real key="value" value="0.0"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="28"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <real key="value" value="0.0"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                     <connections>
@@ -435,14 +405,14 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5g-b8-siC" customClass="DRButton">
-                                    <rect key="frame" x="256" y="22" width="56" height="56"/>
+                                    <rect key="frame" x="240" y="30" width="80" height="100"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                             <real key="value" value="0.5"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="28"/>
+                                            <real key="value" value="0.0"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                             <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -454,54 +424,42 @@
                                         <action selector="didLightButtonTouchDown:" destination="hbY-sM-U6X" eventType="touchDown" id="5xV-gF-DzK"/>
                                     </connections>
                                 </button>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyI-R4-Q1b">
-                                    <rect key="frame" x="64" y="40" width="26.5" height="20"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="20" id="rDf-OT-HhX"/>
-                                    </constraints>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="raz-2P-vk0">
-                                    <rect key="frame" x="147" y="40" width="26" height="20"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="20" id="aOR-x8-Ykz"/>
-                                    </constraints>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOC-Pf-ms6">
-                                    <rect key="frame" x="229" y="40" width="26.5" height="20"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="20" id="kbx-I5-R9L"/>
-                                    </constraints>
-                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckd-sx-zS8" customClass="DRButton">
+                                    <rect key="frame" x="80" y="30" width="80" height="100"/>
+                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didLightButtonRelease:" destination="hbY-sM-U6X" eventType="touchUpOutside" id="mw7-I6-J23"/>
+                                        <action selector="didLightButtonRelease:" destination="hbY-sM-U6X" eventType="touchUpInside" id="s3U-7M-Xff"/>
+                                        <action selector="didLightButtonTouchDown:" destination="hbY-sM-U6X" eventType="touchDown" id="7EI-gE-bgM"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="nyI-R4-Q1b" firstAttribute="leading" secondItem="COK-jF-LSW" secondAttribute="trailing" id="1eH-ee-6LN"/>
+                                <constraint firstItem="W5g-b8-siC" firstAttribute="leading" secondItem="Ym0-wr-etY" secondAttribute="trailing" id="0cB-Un-sfo"/>
+                                <constraint firstItem="Ym0-wr-etY" firstAttribute="bottom" secondItem="ckd-sx-zS8" secondAttribute="bottom" id="0ve-dO-wEm"/>
+                                <constraint firstItem="ckd-sx-zS8" firstAttribute="leading" secondItem="COK-jF-LSW" secondAttribute="trailing" id="2T6-rs-6J7"/>
+                                <constraint firstItem="Ym0-wr-etY" firstAttribute="top" secondItem="ckd-sx-zS8" secondAttribute="top" id="4LV-BS-0ql"/>
                                 <constraint firstItem="Ym0-wr-etY" firstAttribute="width" secondItem="ckd-sx-zS8" secondAttribute="width" id="8le-uf-AD1"/>
-                                <constraint firstItem="raz-2P-vk0" firstAttribute="leading" secondItem="ckd-sx-zS8" secondAttribute="trailing" id="CGd-L0-aia"/>
-                                <constraint firstItem="wOC-Pf-ms6" firstAttribute="centerY" secondItem="hNL-t5-M5A" secondAttribute="centerY" id="Hkp-Zh-jYb"/>
-                                <constraint firstItem="Ym0-wr-etY" firstAttribute="leading" secondItem="raz-2P-vk0" secondAttribute="trailing" id="Jl5-jv-8xU"/>
-                                <constraint firstAttribute="trailingMargin" secondItem="W5g-b8-siC" secondAttribute="trailing" id="JlX-UD-r7R"/>
-                                <constraint firstItem="COK-jF-LSW" firstAttribute="leading" secondItem="hNL-t5-M5A" secondAttribute="leadingMargin" id="NJI-GN-dLa"/>
-                                <constraint firstItem="ckd-sx-zS8" firstAttribute="leading" secondItem="nyI-R4-Q1b" secondAttribute="trailing" id="QDc-ZG-XxI"/>
-                                <constraint firstItem="Ym0-wr-etY" firstAttribute="height" secondItem="ckd-sx-zS8" secondAttribute="height" id="QTj-Yh-nBh"/>
-                                <constraint firstItem="wOC-Pf-ms6" firstAttribute="leading" secondItem="Ym0-wr-etY" secondAttribute="trailing" id="QZe-z4-Zvo"/>
-                                <constraint firstItem="Ym0-wr-etY" firstAttribute="centerY" secondItem="hNL-t5-M5A" secondAttribute="centerY" id="T5f-Sv-DaW"/>
-                                <constraint firstItem="raz-2P-vk0" firstAttribute="centerY" secondItem="hNL-t5-M5A" secondAttribute="centerY" id="UYo-qg-km5"/>
-                                <constraint firstItem="wOC-Pf-ms6" firstAttribute="width" secondItem="nyI-R4-Q1b" secondAttribute="width" id="Yxs-5x-NEV"/>
-                                <constraint firstItem="ckd-sx-zS8" firstAttribute="centerY" secondItem="hNL-t5-M5A" secondAttribute="centerY" id="Zpo-ud-ekK"/>
-                                <constraint firstItem="W5g-b8-siC" firstAttribute="centerY" secondItem="hNL-t5-M5A" secondAttribute="centerY" id="aqJ-k0-obT"/>
-                                <constraint firstItem="raz-2P-vk0" firstAttribute="width" secondItem="nyI-R4-Q1b" secondAttribute="width" id="bf4-HH-Snb"/>
-                                <constraint firstItem="ckd-sx-zS8" firstAttribute="centerY" secondItem="hNL-t5-M5A" secondAttribute="centerY" id="csK-sB-iEe"/>
-                                <constraint firstItem="COK-jF-LSW" firstAttribute="height" secondItem="ckd-sx-zS8" secondAttribute="height" id="h8Z-c9-dC9"/>
+                                <constraint firstAttribute="bottom" secondItem="ckd-sx-zS8" secondAttribute="bottom" id="DZn-AL-JRa"/>
+                                <constraint firstItem="W5g-b8-siC" firstAttribute="top" secondItem="ckd-sx-zS8" secondAttribute="top" id="Dxy-mO-MRi"/>
+                                <constraint firstItem="COK-jF-LSW" firstAttribute="bottom" secondItem="ckd-sx-zS8" secondAttribute="bottom" id="FnT-aR-yYd"/>
+                                <constraint firstAttribute="trailing" secondItem="W5g-b8-siC" secondAttribute="trailing" id="JlX-UD-r7R"/>
+                                <constraint firstItem="COK-jF-LSW" firstAttribute="leading" secondItem="hNL-t5-M5A" secondAttribute="leading" id="NJI-GN-dLa"/>
+                                <constraint firstItem="W5g-b8-siC" firstAttribute="bottom" secondItem="ckd-sx-zS8" secondAttribute="bottom" id="Psv-vN-vCl"/>
                                 <constraint firstItem="W5g-b8-siC" firstAttribute="width" secondItem="Ym0-wr-etY" secondAttribute="width" id="lAj-lX-4Dw"/>
-                                <constraint firstItem="W5g-b8-siC" firstAttribute="leading" secondItem="wOC-Pf-ms6" secondAttribute="trailing" id="pq9-wS-EJr"/>
+                                <constraint firstItem="ckd-sx-zS8" firstAttribute="top" secondItem="hNL-t5-M5A" secondAttribute="top" constant="30" id="na7-K8-rGP"/>
                                 <constraint firstItem="COK-jF-LSW" firstAttribute="width" secondItem="ckd-sx-zS8" secondAttribute="width" id="rgw-Wr-qnk"/>
-                                <constraint firstItem="nyI-R4-Q1b" firstAttribute="centerY" secondItem="hNL-t5-M5A" secondAttribute="centerY" id="tCC-h6-iSe"/>
-                                <constraint firstItem="COK-jF-LSW" firstAttribute="centerY" secondItem="hNL-t5-M5A" secondAttribute="centerY" id="w7h-7b-z7Y"/>
-                                <constraint firstItem="W5g-b8-siC" firstAttribute="height" secondItem="Ym0-wr-etY" secondAttribute="height" id="xUf-Fn-fsd"/>
+                                <constraint firstItem="Ym0-wr-etY" firstAttribute="leading" secondItem="ckd-sx-zS8" secondAttribute="trailing" id="trr-gb-mMi"/>
+                                <constraint firstItem="COK-jF-LSW" firstAttribute="top" secondItem="ckd-sx-zS8" secondAttribute="top" id="yeS-kU-39w"/>
                             </constraints>
                         </view>
                         <sections>
@@ -565,7 +523,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.93789062499999998" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="rYK-e9-Lio" kind="show" id="Pig-Ik-0i2"/>
+                                            <segue destination="rYK-e9-Lio" kind="show" id="Kwa-7b-Jt5"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -586,17 +544,17 @@
         <!--Behavior-->
         <scene sceneID="uT2-Fx-PyS">
             <objects>
-                <tableViewController id="rYK-e9-Lio" customClass="DRProcedureDemoTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DRProcedureDemoTableViewController" id="rYK-e9-Lio" customClass="DRProcedureDemoTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" id="1JK-LQ-dyX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="38E-E3-w49">
-                            <rect key="frame" x="0.0" y="64" width="320" height="104"/>
+                            <rect key="frame" x="0.0" y="64" width="320" height="116"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osT-UQ-LH2">
-                                    <rect key="frame" x="8" y="8" width="304" height="88"/>
+                                    <rect key="frame" x="8" y="8" width="304" height="100"/>
                                     <attributedString key="attributedText">
                                         <fragment content="When Robot is ">
                                             <attributes>
@@ -638,7 +596,7 @@
                             <tableViewSection id="4Ir-Bj-kO0">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="basic" textLabel="bpf-te-DbA" style="IBUITableViewCellStyleDefault" id="h4K-UE-wcf">
-                                        <rect key="frame" x="0.0" y="168" width="320" height="66"/>
+                                        <rect key="frame" x="0.0" y="180" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h4K-UE-wcf" id="RKw-Wd-Dbs">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
@@ -669,7 +627,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="basic" textLabel="8YC-F2-l7x" style="IBUITableViewCellStyleDefault" id="WO1-58-bAV">
-                                        <rect key="frame" x="0.0" y="234" width="320" height="66"/>
+                                        <rect key="frame" x="0.0" y="246" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WO1-58-bAV" id="d41-dL-JQg">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
