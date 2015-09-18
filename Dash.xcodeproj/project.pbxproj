@@ -54,9 +54,6 @@
 		66B2285418FA68C7008C6445 /* DRJoystickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2284F18FA68C7008C6445 /* DRJoystickViewController.m */; };
 		66B2285818FAFDF7008C6445 /* DRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2285718FAFDF7008C6445 /* DRButton.m */; };
 		66B2285A18FB01EA008C6445 /* Main~iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B2285918FB01EA008C6445 /* Main~iPad.storyboard */; };
-		66B786CC1BAC8A5A00D00E80 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B786CB1BAC8A5A00D00E80 /* HockeySDK.framework */; settings = {ASSET_TAGS = (); }; };
-		66B786CE1BAC8A6200D00E80 /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 66B786CD1BAC8A6200D00E80 /* HockeySDK.xcconfig */; settings = {ASSET_TAGS = (); }; };
-		66B786D01BAC8A6500D00E80 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 66B786CF1BAC8A6500D00E80 /* HockeySDKResources.bundle */; settings = {ASSET_TAGS = (); }; };
 		66D6FD2E18C2DD3B00783AC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D6FD2D18C2DD3B00783AC8 /* Foundation.framework */; };
 		66D6FD3018C2DD3B00783AC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D6FD2F18C2DD3B00783AC8 /* CoreGraphics.framework */; };
 		66D6FD3218C2DD3B00783AC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D6FD3118C2DD3B00783AC8 /* UIKit.framework */; };
@@ -144,9 +141,6 @@
 		66B2285618FAFDF7008C6445 /* DRButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRButton.h; sourceTree = "<group>"; };
 		66B2285718FAFDF7008C6445 /* DRButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRButton.m; sourceTree = "<group>"; };
 		66B2285918FB01EA008C6445 /* Main~iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main~iPad.storyboard"; sourceTree = "<group>"; };
-		66B786CB1BAC8A5A00D00E80 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = "HockeySDK-iOS/HockeySDK.embeddedframework/HockeySDK.framework"; sourceTree = "<group>"; };
-		66B786CD1BAC8A6200D00E80 /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = HockeySDK.xcconfig; path = "../HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDK.xcconfig"; sourceTree = "<group>"; };
-		66B786CF1BAC8A6500D00E80 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HockeySDKResources.bundle; path = "../HockeySDK-iOS/HockeySDK.embeddedframework/Resources/HockeySDKResources.bundle"; sourceTree = "<group>"; };
 		66D6FD2A18C2DD3B00783AC8 /* Dash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D6FD2D18C2DD3B00783AC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		66D6FD2F18C2DD3B00783AC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -193,7 +187,6 @@
 				667EA4CF18C3060C00E1C249 /* CoreMotion.framework in Frameworks */,
 				66D6FD3018C2DD3B00783AC8 /* CoreGraphics.framework in Frameworks */,
 				66D6FD3218C2DD3B00783AC8 /* UIKit.framework in Frameworks */,
-				66B786CC1BAC8A5A00D00E80 /* HockeySDK.framework in Frameworks */,
 				66D6FD2E18C2DD3B00783AC8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,7 +318,6 @@
 		66D6FD2C18C2DD3B00783AC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				66B786CB1BAC8A5A00D00E80 /* HockeySDK.framework */,
 				66B2282C18F1CE84008C6445 /* SystemConfiguration.framework */,
 				66B2282A18F1CE7B008C6445 /* Security.framework */,
 				66B2282818F1CE75008C6445 /* QuartzCore.framework */,
@@ -387,8 +379,6 @@
 				66D6FD3618C2DD3B00783AC8 /* InfoPlist.strings */,
 				666CDC7E1925AED8002C7F45 /* Settings.bundle */,
 				66D6FD3918C2DD3B00783AC8 /* main.m */,
-				66B786CD1BAC8A6200D00E80 /* HockeySDK.xcconfig */,
-				66B786CF1BAC8A6500D00E80 /* HockeySDKResources.bundle */,
 				66D6FD3B18C2DD3B00783AC8 /* Dash-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -425,7 +415,6 @@
 				66D6FD2618C2DD3B00783AC8 /* Sources */,
 				66D6FD2718C2DD3B00783AC8 /* Frameworks */,
 				66D6FD2818C2DD3B00783AC8 /* Resources */,
-				66B2282518F1CE59008C6445 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -483,7 +472,6 @@
 				6606D680194280F3003F47C1 /* about.html in Resources */,
 				6617638E19188FA80036D3B2 /* DRSignalsView.xib in Resources */,
 				6638F53A19033B0600F7396B /* Default-568h@2x.png in Resources */,
-				66B786D01BAC8A6500D00E80 /* HockeySDKResources.bundle in Resources */,
 				66B2285A18FB01EA008C6445 /* Main~iPad.storyboard in Resources */,
 				6638F54219043D8C00F7396B /* iphone-tall.png in Resources */,
 				6638F53319033AA500F7396B /* landscape.png in Resources */,
@@ -496,7 +484,6 @@
 				6638F53B19033B0600F7396B /* Default@2x.png in Resources */,
 				66B2284818FA6896008C6445 /* DRWebViewController.xib in Resources */,
 				662B3094191DA49500FAFB08 /* instructions.pdf in Resources */,
-				66B786CE1BAC8A6200D00E80 /* HockeySDK.xcconfig in Resources */,
 				666CDC7F1925AED8002C7F45 /* Settings.bundle in Resources */,
 				6638F5471904406000F7396B /* iphone-tall-blur@2x.png in Resources */,
 				6606D682194280F3003F47C1 /* dash.mp4 in Resources */,
@@ -507,19 +494,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		66B2282518F1CE59008C6445 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
-		};
 		66B9B65318CFD3680083EBEF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -675,10 +649,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dash/Dash-Prefix.pch";
 				INFOPLIST_FILE = "Dash/Dash-Info.plist";
@@ -701,10 +672,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dash/Dash-Prefix.pch";
 				INFOPLIST_FILE = "Dash/Dash-Info.plist";
