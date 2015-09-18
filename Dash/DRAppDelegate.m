@@ -84,7 +84,7 @@
     [[DRCentralManager sharedInstance] stopScanning];
 }
 
-- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
 {
     if (IS_IPAD) {
         return UIInterfaceOrientationMaskAll;

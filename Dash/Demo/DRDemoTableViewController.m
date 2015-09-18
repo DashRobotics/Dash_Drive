@@ -7,16 +7,18 @@
 //
 
 #import "DRDemoTableViewController.h"
+#import "DRCentralManager.h"
+#import "DRRobotLeService.h"
 
 @interface DRDemoTableViewController ()
-
+@property (weak, nonatomic) DRRobotLeService *bleService;
 @end
 
 @implementation DRDemoTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.bleService = [[DRCentralManager sharedInstance] connectedService];
 }
 
 - (void)didReceiveMemoryWarning {

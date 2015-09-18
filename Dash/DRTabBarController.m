@@ -40,7 +40,7 @@
         [self.viewController[1] setTitle:@"AUTOMATIC MODES"];
         [self.viewController[2] setTitle:@"CONFIGURE"];
         self.animationStyle = RMMultipleViewsControllerAnimationNone;
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:[@"Disconnect" uppercaseString] style:UIBarButtonItemStyleBordered target:self action:@selector(didTapDisconnect:)];
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:[@"Disconnect" uppercaseString] style:UIBarButtonItemStylePlain target:self action:@selector(didTapDisconnect:)];
     } else {
         [self.viewController[0] setTitle:@"DRIVE"];
         [self.viewController[1] setTitle:@"AUTO"];
