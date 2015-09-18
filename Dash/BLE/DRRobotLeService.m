@@ -390,7 +390,11 @@ NSString *const kWriteWithoutResponseCharacteristicUUIDString = @"713D0003-503E-
             [self discover];
             return;
         } else {
-            NSLog(@"Write characteristic undefined!");
+            if (IS_SIMULATOR) {
+                NSLog(@"send %@", data);
+            } else {
+                NSLog(@"Write characteristic undefined!");
+            }
 //        [self discover];
             return;
         }

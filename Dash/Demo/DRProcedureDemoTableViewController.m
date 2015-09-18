@@ -21,13 +21,13 @@
     self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//    self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.editing = YES;
     
     self.items = @[
-                   @"Test",
-                   @"Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test!",
-                   @"Test 3",
+                   @"Set eyes to red",
+                   @"Drive at 100% for 5 seconds",
+//                   @"Stop",
                    ];
 }
 

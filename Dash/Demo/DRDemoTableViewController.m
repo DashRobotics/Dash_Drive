@@ -10,6 +10,12 @@
 #import "DRCentralManager.h"
 #import "DRRobotLeService.h"
 
+typedef NS_ENUM(NSInteger, DRDemoTableRows) {
+    DRDemoTableRowLaserHit = 0,
+    DRDemoTableRowRedEyeRun,
+    DRDemoTableRowCount
+};
+
 @interface DRDemoTableViewController ()
 @property (weak, nonatomic) DRRobotLeService *bleService;
 @end
@@ -21,14 +27,48 @@
     self.bleService = [[DRCentralManager sharedInstance] connectedService];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - IBActions
+
+- (IBAction)didLightButtonTouchDown:(UIButton *)sender {
+    self.bleService.eyeColor = sender.backgroundColor;
+}
+
+- (IBAction)didLightButtonRelease:(UIButton *)sender {
+    self.bleService.eyeColor = kDREyeColorOff;
+}
+
+- (void)driveForwardAtSpeed:(NSNumber *)speed {
+    [self.bleService sendLeftMotor:speed.doubleValue rightMotor:speed.doubleValue];
 }
 
 #pragma mark - Table view data source
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (!indexPath.section && indexPath.row < DRDemoTableRowCount) {
+        switch (indexPath.row) {
+            case DRDemoTableRowLaserHit:
+            {
+                [self.bleService performSelector:@selector(setEyeColor:) withObject:[UIColor redColor] afterDelay:0];
+                [self.bleService performSelector:@selector(setEyeColor:) withObject:kDREyeColorOff afterDelay:0.1];
+                
+                [self.bleService performSelector:@selector(setEyeColor:) withObject:[UIColor redColor] afterDelay:0.2];
+                [self.bleService performSelector:@selector(setEyeColor:) withObject:kDREyeColorOff afterDelay:0.3];
+                
+                [self.bleService performSelector:@selector(setEyeColor:) withObject:[UIColor redColor] afterDelay:0.4];
+                [self.bleService performSelector:@selector(setEyeColor:) withObject:kDREyeColorOff afterDelay:0.5];
+                break;
+            }
+            case DRDemoTableRowRedEyeRun:
+            {
+                [self.bleService performSelector:@selector(setEyeColor:) withObject:[UIColor redColor] afterDelay:0];
+                [self performSelector:@selector(driveForwardAtSpeed:) withObject:@(100) afterDelay:0];
+                [self.bleService performSelector:@selector(reset) withObject:nil afterDelay:5];
+                break;
+            }
+            default:
+                break;
+        }
+    }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
