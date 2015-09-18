@@ -70,6 +70,8 @@
 		66F0559918E521DC00ED241D /* LGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F0559318E521DC00ED241D /* LGUtils.m */; };
 		66F055CD18E8A80C00ED241D /* DRRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F055CC18E8A80C00ED241D /* DRRootViewController.m */; };
 		66F055D618E8B71E00ED241D /* DRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F055D518E8B71E00ED241D /* DRTabBarController.m */; };
+		66F7841F1BACCAC900385C09 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F7841D1BACCAC900385C09 /* Fabric.framework */; settings = {ASSET_TAGS = (); }; };
+		66F784201BACCAC900385C09 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F7841E1BACCAC900385C09 /* Crashlytics.framework */; settings = {ASSET_TAGS = (); }; };
 		CAFABD8119B456580017896F /* DRGyroButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFABD8019B456580017896F /* DRGyroButton.m */; };
 /* End PBXBuildFile section */
 
@@ -170,6 +172,8 @@
 		66F055CC18E8A80C00ED241D /* DRRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRRootViewController.m; sourceTree = "<group>"; };
 		66F055D418E8B71E00ED241D /* DRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRTabBarController.h; sourceTree = "<group>"; };
 		66F055D518E8B71E00ED241D /* DRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRTabBarController.m; sourceTree = "<group>"; };
+		66F7841D1BACCAC900385C09 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		66F7841E1BACCAC900385C09 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		CAFABD7F19B456580017896F /* DRGyroButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRGyroButton.h; sourceTree = "<group>"; };
 		CAFABD8019B456580017896F /* DRGyroButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRGyroButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66B2282D18F1CE84008C6445 /* SystemConfiguration.framework in Frameworks */,
+				66F7841F1BACCAC900385C09 /* Fabric.framework in Frameworks */,
 				66B2282B18F1CE7B008C6445 /* Security.framework in Frameworks */,
 				66B2282918F1CE75008C6445 /* QuartzCore.framework in Frameworks */,
 				66B2282718F1CE70008C6445 /* CoreText.framework in Frameworks */,
@@ -188,6 +193,7 @@
 				66D6FD3018C2DD3B00783AC8 /* CoreGraphics.framework in Frameworks */,
 				66D6FD3218C2DD3B00783AC8 /* UIKit.framework in Frameworks */,
 				66D6FD2E18C2DD3B00783AC8 /* Foundation.framework in Frameworks */,
+				66F784201BACCAC900385C09 /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +324,8 @@
 		66D6FD2C18C2DD3B00783AC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66F7841D1BACCAC900385C09 /* Fabric.framework */,
+				66F7841E1BACCAC900385C09 /* Crashlytics.framework */,
 				66B2282C18F1CE84008C6445 /* SystemConfiguration.framework */,
 				66B2282A18F1CE7B008C6445 /* Security.framework */,
 				66B2282818F1CE75008C6445 /* QuartzCore.framework */,
@@ -415,6 +423,7 @@
 				66D6FD2618C2DD3B00783AC8 /* Sources */,
 				66D6FD2718C2DD3B00783AC8 /* Frameworks */,
 				66D6FD2818C2DD3B00783AC8 /* Resources */,
+				66F7841C1BACCA6700385C09 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -506,6 +515,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "#!/bin/bash\nif [ $CONFIGURATION == Release ]; then\n    buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\n    buildNumber=$(($buildNumber + 1))\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\nfi";
+		};
+		66F7841C1BACCA6700385C09 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 2a0c051fb65cbb7ccf9ce73a4759a1a3fa6fd5c1 195b91ea4c99b74f2a47adc91cc13052dc613a214ef3f82eaa75bb97bb80f842";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -649,7 +671,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dash/Dash-Prefix.pch";
 				INFOPLIST_FILE = "Dash/Dash-Info.plist";
@@ -672,7 +697,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dash/Dash-Prefix.pch";
 				INFOPLIST_FILE = "Dash/Dash-Info.plist";

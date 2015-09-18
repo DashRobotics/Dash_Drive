@@ -23,7 +23,21 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>385</string>
+	<string>386</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>2a0c051fb65cbb7ccf9ce73a4759a1a3fa6fd5c1</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>LSRequiresIPhoneOS</key>

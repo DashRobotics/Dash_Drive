@@ -10,11 +10,14 @@
 #import "DRCentralManager.h"
 #import "DRRobotLeService.h"
 #import "DRWebViewController.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @implementation DRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{    
+{
+    [Fabric with:@[[Crashlytics class]]];
 
 //    UIStoryboard *storyboard = IS_IPAD ? [UIStoryboard storyboardWithName:@"Main~iPad" bundle:nil]
 //                                        : [UIStoryboard storyboardWithName:@"Main" bundle:nil];
