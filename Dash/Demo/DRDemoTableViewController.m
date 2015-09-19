@@ -11,7 +11,9 @@
 #import "DRRobotLeService.h"
 
 typedef NS_ENUM(NSInteger, DRDemoTableRows) {
-    DRDemoTableRowLaserHit = 0,
+    DRDemoTableRowRedFlashes = 0,
+    DRDemoTableRowGreenFlashes,
+    DRDemoTableRowColorfulFlashes,
     DRDemoTableRowRedEyeRun,
     DRDemoTableRowCount
 };
@@ -42,17 +44,47 @@ typedef NS_ENUM(NSInteger, DRDemoTableRows) {
     [self.bleService sendLeftMotor:speed.doubleValue rightMotor:speed.doubleValue];
 }
 
+- (void)flashColors:(NSArray *)colors onDuration:(NSTimeInterval)onDuration offDuration:(NSTimeInterval)offDuration {
+    NSTimeInterval delay = 0.0;
+    for (NSUInteger i = 0; i < colors.count*2; i++) {
+        UIColor *color = (i % 2)? kDREyeColorOff : [colors objectAtIndex:i/2.0];
+        [self.bleService performSelector:@selector(setEyeColor:) withObject:color afterDelay:delay];
+        delay += (i % 2)? offDuration : onDuration;
+    }
+}
+
 #pragma mark - Table view data source
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (!indexPath.section && indexPath.row < DRDemoTableRowCount) {
         switch (indexPath.row) {
-            case DRDemoTableRowLaserHit:
+            case DRDemoTableRowRedFlashes:
             {
-                for (NSUInteger i = 0; i < 8; i++) {
-                    UIColor *color = (i % 2)? kDREyeColorOff : [UIColor redColor];
-                    [self.bleService performSelector:@selector(setEyeColor:) withObject:color afterDelay:0.075*i];
-                }
+                [self flashColors:@[
+                                    [UIColor redColor],
+                                    [UIColor redColor],
+                                    [UIColor redColor],
+                                    [UIColor redColor],
+                                    [UIColor redColor],
+                                    ] onDuration:0.065 offDuration:0.035];
+                break;
+            }
+            case DRDemoTableRowGreenFlashes:
+            {
+                [self flashColors:@[
+                                   [UIColor greenColor],
+                                   [UIColor greenColor],
+                                   ] onDuration:0.085 offDuration:0.035];
+                break;
+            }
+            case DRDemoTableRowColorfulFlashes:
+            {
+                [self flashColors:@[
+                                    [UIColor redColor],
+                                    [UIColor greenColor],
+                                    [UIColor blueColor],
+                                    [UIColor whiteColor],
+                                    ] onDuration:0.25 offDuration:0.01];
                 break;
             }
             case DRDemoTableRowRedEyeRun:
