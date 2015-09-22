@@ -14,6 +14,12 @@ typedef NS_ENUM(NSInteger, DRDemoTableRows) {
     DRDemoTableRowRedFlashes = 0,
     DRDemoTableRowGreenFlashes,
     DRDemoTableRowColorfulFlashes,
+    DRDemoTableRowRedPulse,
+    DRDemoTableRowGreenPulse,
+    DRDemoTableRowWhitePulse,
+    DRDemoTableRowRedFadeIn,
+    DRDemoTableRowGreenFadeIn,
+    DRDemoTableRowWhiteFadeIn,
     DRDemoTableRowRedEyeRun,
     DRDemoTableRowCount
 };
@@ -53,6 +59,25 @@ typedef NS_ENUM(NSInteger, DRDemoTableRows) {
     }
 }
 
+- (void)pulseColor:(UIColor *)color andFade:(BOOL)fade {
+    CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha =0.0;
+    [color getRed:&red green:&green blue:&blue alpha:&alpha];
+
+    NSMutableArray *indexes = [NSMutableArray new];
+    for (NSUInteger i = 0; i <= 20; i++) {
+        [indexes addObject:@(i / 20.0)];
+    }
+    if (fade) {
+        for (NSInteger i = 15; i > 0; i--) {
+            [indexes addObject:@((i-1) / 15.0)];
+        }
+    }
+    [indexes enumerateObjectsUsingBlock:^(NSNumber *index, NSUInteger count, BOOL * _Nonnull stop) {
+        CGFloat i = [index doubleValue];
+        [self.bleService performSelector:@selector(setEyeColor:) withObject:[UIColor colorWithRed:red*i green:green*i blue:blue*i alpha:1] afterDelay:0.025*count];
+    }];
+}
+
 #pragma mark - Table view data source
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -77,6 +102,24 @@ typedef NS_ENUM(NSInteger, DRDemoTableRows) {
                                    ] onDuration:0.085 offDuration:0.035];
                 break;
             }
+            case DRDemoTableRowRedPulse:
+                [self pulseColor:[UIColor redColor] andFade:YES];
+                break;
+            case DRDemoTableRowGreenPulse:
+                [self pulseColor:[UIColor greenColor] andFade:YES];
+                break;
+            case DRDemoTableRowWhitePulse:
+                [self pulseColor:[UIColor whiteColor] andFade:YES];
+                break;
+            case DRDemoTableRowRedFadeIn:
+                [self pulseColor:[UIColor redColor] andFade:NO];
+                break;
+            case DRDemoTableRowGreenFadeIn:
+                [self pulseColor:[UIColor greenColor] andFade:NO];
+                break;
+            case DRDemoTableRowWhiteFadeIn:
+                [self pulseColor:[UIColor whiteColor] andFade:NO];
+                break;
             case DRDemoTableRowColorfulFlashes:
             {
                 [self flashColors:@[
@@ -90,7 +133,9 @@ typedef NS_ENUM(NSInteger, DRDemoTableRows) {
             case DRDemoTableRowRedEyeRun:
             {
                 [self.bleService performSelector:@selector(setEyeColor:) withObject:[UIColor redColor] afterDelay:0];
-                [self performSelector:@selector(driveForwardAtSpeed:) withObject:@(100) afterDelay:0];
+                [self performSelector:@selector(driveForwardAtSpeed:) withObject:@(200) afterDelay:0];
+                [self performSelector:@selector(driveForwardAtSpeed:) withObject:@(200) afterDelay:0.5];
+                [self performSelector:@selector(driveForwardAtSpeed:) withObject:@(200) afterDelay:1];
                 [self.bleService performSelector:@selector(reset) withObject:nil afterDelay:3];
                 [self.bleService performSelector:@selector(setEyeColor:) withObject:kDREyeColorOff afterDelay:3];
                 break;
