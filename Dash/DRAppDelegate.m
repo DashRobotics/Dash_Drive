@@ -18,6 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [Fabric with:@[[Crashlytics class]]];
+    
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{ @"Gyro-pref" : @YES }];
 
 //    UIStoryboard *storyboard = IS_IPAD ? [UIStoryboard storyboardWithName:@"Main~iPad" bundle:nil]
 //                                        : [UIStoryboard storyboardWithName:@"Main" bundle:nil];

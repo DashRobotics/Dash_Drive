@@ -208,7 +208,7 @@ NSString *const kWriteWithoutResponseCharacteristicUUIDString = @"713D0003-503E-
 }
 
 - (void)sendLeftMotor:(CGFloat)leftMotor rightMotor:(CGFloat)rightMotor
-{
+{    
     leftMotor = CLAMP(leftMotor, -255, 255);
     rightMotor = CLAMP(rightMotor, -255, 255);
     
@@ -251,6 +251,7 @@ NSString *const kWriteWithoutResponseCharacteristicUUIDString = @"713D0003-503E-
     if (throttle == 0.0) {
         [self reset];
     } else {
+        throttle = -throttle;
     
         // [type "3" - 1]  [power, -100->100, 2] [rotationRate, -400->400, 2]
 

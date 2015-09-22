@@ -129,7 +129,7 @@
                         <barButtonItem key="backBarButtonItem" title="Drive" id="Aiz-92-4sK"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="CC0-xS-zjU"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="5Ke-Kn-SpW">
-                            <rect key="frame" x="169.5" y="7" width="261" height="30"/>
+                            <rect key="frame" x="170" y="7" width="261" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="" image="joystick-icon"/>
@@ -276,6 +276,7 @@
                         <outlet property="characterLimitLabel" destination="6Fb-An-7WX" id="fTC-Qk-ByP"/>
                         <outlet property="colorPickerView" destination="o67-sM-yuJ" id="deU-7g-ekr"/>
                         <outlet property="debugView" destination="1uT-Ml-ZoF" id="SVW-g0-ZpC"/>
+                        <outlet property="gyroDriveSwitch" destination="CB4-vo-Z1L" id="QFw-7M-4vY"/>
                         <outlet property="nameTextField" destination="Esh-Xr-1CP" id="twD-WW-fIx"/>
                     </connections>
                 </viewController>
@@ -746,7 +747,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bpf-te-DbA">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" id="bpf-te-DbA">
                                                     <rect key="frame" x="15" y="0.0" width="290" height="65"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <attributedString key="attributedText">
@@ -754,14 +755,14 @@
                                                             <attributes>
                                                                 <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <font key="NSFont" size="24" name="AvenirNext-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
                                                             </attributes>
                                                         </fragment>
                                                         <fragment content="RED">
                                                             <attributes>
                                                                 <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -777,7 +778,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8YC-F2-l7x">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" id="8YC-F2-l7x">
                                                     <rect key="frame" x="15" y="0.0" width="290" height="65"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <attributedString key="attributedText">
@@ -785,7 +786,7 @@
                                                             <attributes>
                                                                 <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <font key="NSFont" size="24" name="AvenirNext-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
                                                             </attributes>
                                                         </fragment>
                                                         <fragment content="100%">
@@ -793,14 +794,14 @@
                                                                 <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
                                                                 <font key="NSOriginalFont" size="24" name="AvenirNext-DemiBold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
                                                             </attributes>
                                                         </fragment>
                                                         <fragment content=" for ">
                                                             <attributes>
                                                                 <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <font key="NSFont" size="24" name="AvenirNext-Regular"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
                                                             </attributes>
                                                         </fragment>
                                                         <fragment content="5 sec">
@@ -808,7 +809,7 @@
                                                                 <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
                                                                 <font key="NSOriginalFont" size="24" name="AvenirNext-DemiBold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>

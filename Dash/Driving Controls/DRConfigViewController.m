@@ -21,6 +21,7 @@ NSTimeInterval TimeInterval;
 @property (weak, nonatomic) IBOutlet UIView *colorPickerView;
 @property (strong, nonatomic) NSArray *buttons;
 @property (weak, nonatomic) IBOutlet UIView *debugView;
+@property (weak, nonatomic) IBOutlet UISwitch *gyroDriveSwitch;
 - (IBAction)didToggleGyroDrive:(UISwitch *)sender;
 - (IBAction)didToggleFixedJoystick:(UISwitch *)sender;
 @property (strong, nonatomic) UIFont *nameFont, *namePlaceholderFont;
@@ -106,6 +107,8 @@ NSTimeInterval TimeInterval;
     if (!self.nameTextField.hasText) {
         [self.nameTextField becomeFirstResponder];
     }
+    
+    self.gyroDriveSwitch.on = self.bleService.useGyroDrive;
 }
 
 - (void)viewWillDisappear:(BOOL)animated

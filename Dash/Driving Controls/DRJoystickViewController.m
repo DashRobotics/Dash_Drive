@@ -12,6 +12,7 @@
 #import "DRSignalsView.h"
 #import "DREyeColorButton.h"
 #import "DRRobotProperties.h"
+#import "DRDemoTableViewController.h"
 
 static CGFloat MAX_JOYSTICK_TRAVEL = 80;
 static CGFloat JOYSTICK_THUMB_SIZE = 100;
@@ -60,12 +61,7 @@ NSTimeInterval ElapsedTimeInterval;
     
     [self updateThrottle:0 direction:0];
     
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    NSString *GyroPref = @"Gyro-pref";
-    if ([prefs boolForKey:GyroPref])
-        self.bleService.useGyroDrive = YES;
-    else
-        self.bleService.useGyroDrive = NO;
+    self.bleService.useGyroDrive = [[NSUserDefaults standardUserDefaults] boolForKey:@"Gyro-pref"];
 
     if (IS_IPAD) {
         UIView *eyeButton = [self.view viewWithTag:111];
@@ -80,6 +76,16 @@ NSTimeInterval ElapsedTimeInterval;
         if (IS_WIDESCREEN) {
             [self addBottomBorderToView:self.signalsView];
         }
+    }
+    
+    if (IS_DEV_MODE) {
+        DRDemoTableViewController *demoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DRDemoTableViewController"];
+        
+        demoVC.view.frame = self.signalsView.bounds;
+        demoVC.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+        [self.signalsView addSubview:demoVC.view];
+        [self addChildViewController:demoVC];
+        [demoVC didMoveToParentViewController:self];
     }
 }
 
