@@ -78,15 +78,15 @@ NSTimeInterval ElapsedTimeInterval;
         }
     }
     
-    if (IS_DEV_MODE) {
-        DRDemoTableViewController *demoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DRDemoTableViewController"];
-        
-        demoVC.view.frame = self.signalsView.bounds;
-        demoVC.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
-        [self.signalsView addSubview:demoVC.view];
-        [self addChildViewController:demoVC];
-        [demoVC didMoveToParentViewController:self];
-    }
+//    if (IS_DEV_MODE) {
+//        DRDemoTableViewController *demoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DRDemoTableViewController"];
+//        
+//        demoVC.view.frame = self.signalsView.bounds;
+//        demoVC.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+//        [self.signalsView addSubview:demoVC.view];
+//        [self addChildViewController:demoVC];
+//        [demoVC didMoveToParentViewController:self];
+//    }
 }
 
 - (void)sendUpdate
