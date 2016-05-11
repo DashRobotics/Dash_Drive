@@ -1,6 +1,6 @@
 
 *.xcuserdatad/
-
+screenshots/*
 Dash.xcodeproj/project.xcworkspace/xcshareddata/*
 
 Dash.xcodeproj/xcuserdata/paulb.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
