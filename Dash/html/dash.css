@@ -61,10 +61,8 @@ strong {
 
 video {
 	box-sizing: border-box; 
-/* 	width: 100% !important; */
-/* 	height: auto !important; */
-	width: 320px !important;  /* Hack around a weird sizing problem */
-	height: 180px !important; /* with fixed 16:9 dimensions for iPhone. */
+ 	width: 100% !important;
+ 	height: auto !important;
 	margin: 0 0 -10px;
 	padding: 0;
 }

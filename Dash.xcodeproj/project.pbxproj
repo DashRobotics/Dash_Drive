@@ -36,6 +36,9 @@
 		665F75471BAA3E56005803AE /* DRSignalPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F75431BAA3E56005803AE /* DRSignalPacket.m */; };
 		665F754B1BAA47EC005803AE /* DRDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F754A1BAA47EC005803AE /* DRDemoTableViewController.m */; };
 		665F754E1BAA4806005803AE /* DRProcedureDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F754D1BAA4806005803AE /* DRProcedureDemoTableViewController.m */; };
+		666242E81CEBBB7200942631 /* kamigami_supercut_iphone.mov in Resources */ = {isa = PBXBuildFile; fileRef = 666242E51CEBBB7200942631 /* kamigami_supercut_iphone.mov */; };
+		666242E91CEBBB7200942631 /* kamigami.html in Resources */ = {isa = PBXBuildFile; fileRef = 666242E61CEBBB7200942631 /* kamigami.html */; };
+		666242EA1CEBBB7200942631 /* kamigami.png in Resources */ = {isa = PBXBuildFile; fileRef = 666242E71CEBBB7200942631 /* kamigami.png */; };
 		666CDC7F1925AED8002C7F45 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 666CDC7E1925AED8002C7F45 /* Settings.bundle */; };
 		667EA4CF18C3060C00E1C249 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667EA4CE18C3060C00E1C249 /* CoreMotion.framework */; };
 		66878CD6190DBFF20094B5CA /* DRAutoModesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66878CD5190DBFF20094B5CA /* DRAutoModesViewController.m */; };
@@ -70,8 +73,8 @@
 		66F0559918E521DC00ED241D /* LGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F0559318E521DC00ED241D /* LGUtils.m */; };
 		66F055CD18E8A80C00ED241D /* DRRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F055CC18E8A80C00ED241D /* DRRootViewController.m */; };
 		66F055D618E8B71E00ED241D /* DRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F055D518E8B71E00ED241D /* DRTabBarController.m */; };
-		66F7841F1BACCAC900385C09 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F7841D1BACCAC900385C09 /* Fabric.framework */; settings = {ASSET_TAGS = (); }; };
-		66F784201BACCAC900385C09 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F7841E1BACCAC900385C09 /* Crashlytics.framework */; settings = {ASSET_TAGS = (); }; };
+		66F7841F1BACCAC900385C09 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F7841D1BACCAC900385C09 /* Fabric.framework */; };
+		66F784201BACCAC900385C09 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F7841E1BACCAC900385C09 /* Crashlytics.framework */; };
 		CAFABD8119B456580017896F /* DRGyroButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFABD8019B456580017896F /* DRGyroButton.m */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +120,9 @@
 		665F754A1BAA47EC005803AE /* DRDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRDemoTableViewController.m; path = Demo/DRDemoTableViewController.m; sourceTree = "<group>"; };
 		665F754C1BAA4806005803AE /* DRProcedureDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRProcedureDemoTableViewController.h; path = Demo/DRProcedureDemoTableViewController.h; sourceTree = "<group>"; };
 		665F754D1BAA4806005803AE /* DRProcedureDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRProcedureDemoTableViewController.m; path = Demo/DRProcedureDemoTableViewController.m; sourceTree = "<group>"; };
+		666242E51CEBBB7200942631 /* kamigami_supercut_iphone.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = kamigami_supercut_iphone.mov; sourceTree = "<group>"; };
+		666242E61CEBBB7200942631 /* kamigami.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = kamigami.html; sourceTree = "<group>"; };
+		666242E71CEBBB7200942631 /* kamigami.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamigami.png; sourceTree = "<group>"; };
 		666CDC7E1925AED8002C7F45 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		667EA4CE18C3060C00E1C249 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		66878CD4190DBFF20094B5CA /* DRAutoModesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRAutoModesViewController.h; path = "Driving Controls/DRAutoModesViewController.h"; sourceTree = "<group>"; };
@@ -208,6 +214,9 @@
 				6606D67D194280F3003F47C1 /* dash.mp4 */,
 				6606D67E194280F3003F47C1 /* hands_nice_vimeo_small.jpg */,
 				6606D67F194280F3003F47C1 /* hands_nice_vimeo_small@2x.jpg */,
+				666242E51CEBBB7200942631 /* kamigami_supercut_iphone.mov */,
+				666242E61CEBBB7200942631 /* kamigami.html */,
+				666242E71CEBBB7200942631 /* kamigami.png */,
 			);
 			path = html;
 			sourceTree = "<group>";
@@ -475,6 +484,7 @@
 				66878CE1190DEF860094B5CA /* DashAutoModes.plist in Resources */,
 				66D6FD4618C2DD3B00783AC8 /* Images.xcassets in Resources */,
 				6638F53E19033B4000F7396B /* portrait.png in Resources */,
+				666242EA1CEBBB7200942631 /* kamigami.png in Resources */,
 				6638F53219033AA500F7396B /* landscape@2x.png in Resources */,
 				6638F5461904406000F7396B /* iphone-blur@2x.png in Resources */,
 				6606D683194280F3003F47C1 /* hands_nice_vimeo_small.jpg in Resources */,
@@ -483,6 +493,7 @@
 				6638F53A19033B0600F7396B /* Default-568h@2x.png in Resources */,
 				66B2285A18FB01EA008C6445 /* Main~iPad.storyboard in Resources */,
 				6638F54219043D8C00F7396B /* iphone-tall.png in Resources */,
+				666242E91CEBBB7200942631 /* kamigami.html in Resources */,
 				6638F53319033AA500F7396B /* landscape.png in Resources */,
 				6638F54319043D8C00F7396B /* iphone@2x.png in Resources */,
 				6606D684194280F3003F47C1 /* hands_nice_vimeo_small@2x.jpg in Resources */,
@@ -492,6 +503,7 @@
 				66D6FD4118C2DD3B00783AC8 /* Main.storyboard in Resources */,
 				6638F53B19033B0600F7396B /* Default@2x.png in Resources */,
 				66B2284818FA6896008C6445 /* DRWebViewController.xib in Resources */,
+				666242E81CEBBB7200942631 /* kamigami_supercut_iphone.mov in Resources */,
 				662B3094191DA49500FAFB08 /* instructions.pdf in Resources */,
 				666CDC7F1925AED8002C7F45 /* Settings.bundle in Resources */,
 				6638F5471904406000F7396B /* iphone-tall-blur@2x.png in Resources */,

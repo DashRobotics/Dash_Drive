@@ -59,7 +59,6 @@ NSTimeInterval TimeInterval;
     } else {
         self.myNavigationItem = self.navigationItem;
         self.myNavigationBar = self.navigationController.navigationBar;
-        self.navigationItem.leftBarButtonItem = nil;
     }
     
     // create animated progress bar
@@ -80,6 +79,12 @@ NSTimeInterval TimeInterval;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillResignActive) name:UIApplicationWillResignActiveNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
+    
+    static NSString *const kDRKamigamiAdKey = @"kDRKamigamiAdKey";
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:kDRKamigamiAdKey]) {
+        [self didTapKamigamiButton:nil];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kDRKamigamiAdKey];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -150,11 +155,19 @@ NSTimeInterval TimeInterval;
     [self.scanProgressLayer removeAllAnimations];
 }
 
-- (IBAction)didTapAboutButton:(id)sender 
+- (IBAction)didTapAboutButton:(id)sender
 {    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"about" ofType:@"html"];
     DRWebViewController *dvc = [DRWebViewController webViewWithUrl:[NSURL fileURLWithPath:path]];
     dvc.title = [sender currentTitle];
+    [self.navigationController pushViewController:dvc animated:YES];
+}
+
+- (IBAction)didTapKamigamiButton:(id)sender
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"kamigami" ofType:@"html"];
+    DRWebViewController *dvc = [DRWebViewController webViewWithUrl:[NSURL fileURLWithPath:path]];
+    dvc.title = @"Kamigami Robots";
     [self.navigationController pushViewController:dvc animated:YES];
 }
 
